@@ -1,0 +1,2 @@
+#!/bin/sh
+x11vnc -ncache 10 -auth guess -repeat -nap -loop -forever -rfbauth ~/.vnc/passwd -desktop "VNC ${USER}@${HOSTNAME}"|grep -Eo "[0-9]{4}"
